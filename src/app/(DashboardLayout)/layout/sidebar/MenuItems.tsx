@@ -2,6 +2,9 @@ import {
   IconAperture,
   IconCopy,
   IconLayoutDashboard,
+  IconChartBar,
+  IconBuildingStore,
+  IconHistory,
   IconLogin,
   IconMoodHappy,
   IconTypography,
@@ -18,9 +21,21 @@ const Menuitems = [
 
   {
     id: uniqueId(),
-    title: "Dashboard",
-    icon: IconLayoutDashboard,
+    title: "통계",
+    icon: IconChartBar,
     href: "/",
+  },
+  {
+    id: uniqueId(),
+    title: "상품 관리",
+    icon: IconBuildingStore,
+    href: "/products",
+  },
+  {
+    id: uniqueId(),
+    title: "사용자 로그",
+    icon: IconHistory,
+    href: "/logs",
   },
   {
     navlabel: true,
