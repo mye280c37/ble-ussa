@@ -3,6 +3,10 @@ import { baselightTheme } from "@/utils/theme/DefaultColors";
 
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import { Container } from "postcss";
+
+// These styles apply to every route in the application
+import './globals.css'
 
 export default function RootLayout({
   children,
