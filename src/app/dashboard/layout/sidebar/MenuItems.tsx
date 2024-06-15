@@ -23,19 +23,19 @@ const Menuitems = [
     id: uniqueId(),
     title: "통계",
     icon: IconChartBar,
-    href: "/",
+    href: "/dashboard",
   },
   {
     id: uniqueId(),
     title: "상품 관리",
     icon: IconBuildingStore,
-    href: "/products",
+    href: "/dashboard/products-management",
   },
   {
     id: uniqueId(),
     title: "사용자 로그",
     icon: IconHistory,
-    href: "/logs",
+    href: "/dashboard/user-logs",
   },
   {
     navlabel: true,
@@ -45,13 +45,13 @@ const Menuitems = [
     id: uniqueId(),
     title: "Typography",
     icon: IconTypography,
-    href: "/utilities/typography",
+    href: "/dashboard/utilities/typography",
   },
   {
     id: uniqueId(),
     title: "Shadow",
     icon: IconCopy,
-    href: "/utilities/shadow",
+    href: "/dashboard/utilities/shadow",
   },
   {
     navlabel: true,

@@ -9,10 +9,16 @@ const LinkStyled = styled(Link)(() => ({
   display: "block",
 }));
 
+const Img = styled("img")(() => ({
+  height: "70px !important",
+  width: "174px",
+}));
+
 const Logo = () => {
   return (
     <LinkStyled href="/">
-      <Image src="/images/logos/dark-logo.svg" alt="logo" height={70} width={174} priority />
+      {/* <Image src="/images/logos/dark-logo.svg" alt="logo" height={70} width={174} sx={{height: auto}} priority /> */}
+      <Img src="/images/logos/dark-logo.svg" alt="logo"/>
     </LinkStyled>
   );
 };
