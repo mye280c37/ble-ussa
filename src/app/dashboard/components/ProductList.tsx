@@ -21,8 +21,8 @@ const ProductList = () => {
             <DashboardCard title="상품 목록" height='80dvh'>
                 <Box sx={{ overflow: 'auto', width: 'auto', pt: 3 }}>
                     {Products.map((product) => (
-                        <Box sx={{ pb: 3 }}>
-                            <Grid container spacing={3} key={product.name}>
+                        <Box sx={{ pb: 3 }} key={product.id}>
+                            <Grid container spacing={3}>
                                 <Grid item xs={6} lg={3}>
                                     <Typography
                                         sx={{
