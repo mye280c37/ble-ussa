@@ -11,6 +11,14 @@ type Props = {
   headsubtitle?: string | JSX.Element;
   children?: JSX.Element;
   middlecontent?: string | JSX.Element;
+  height?: string;
+};
+
+const dashboardCardStyle = {
+  "padding": 0,
+  "overflow": "scroll",
+  "-ms-overflow-style": "none", /* IE and Edge */
+  "scrollbar-width": "none" /* Firefox */
 };
 
 const DashboardCard = ({
@@ -23,9 +31,10 @@ const DashboardCard = ({
   headtitle,
   headsubtitle,
   middlecontent,
+  height
 }: Props) => {
   return (
-    <Card sx={{ padding: 0, height: "100%" }} elevation={4} variant={undefined}>
+    <Card sx={{...dashboardCardStyle, height: height? height: "100%"}} elevation={4} variant={undefined}>
       {cardheading ? (
         <CardContent>
           <Typography variant="h5">{headtitle}</Typography>
