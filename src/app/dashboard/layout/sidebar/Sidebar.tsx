@@ -1,4 +1,4 @@
-import { useMediaQuery, Box, Drawer } from "@mui/material";
+import { useMediaQuery, Box, Drawer, Typography } from "@mui/material";
 import Logo from "../shared/logo/Logo";
 import SidebarItems from "./SidebarItems";
 import { Upgrade } from "./Updrade";
@@ -51,15 +51,18 @@ const Sidebar = ({
             {/* ------------------------------------------- */}
             {/* Logo */}
             {/* ------------------------------------------- */}
-            <Box px={3}>
+            {/* <Box px={3}>
               <Logo />
+            </Box> */}
+            <Box px={3}>
+              <Typography variant="h4" sx={{ pt: 3 }}>App Name</Typography>
             </Box>
             <Box>
               {/* ------------------------------------------- */}
               {/* Sidebar Items */}
               {/* ------------------------------------------- */}
               <SidebarItems />
-              <Upgrade />
+              {/* <Upgrade /> */}
             </Box>
           </Box>
         </Drawer>
