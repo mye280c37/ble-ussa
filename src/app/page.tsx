@@ -1,19 +1,18 @@
 'use client'
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container } from '@mui/material';
+import React from 'react';
 // components
-import ProductList from './dashboard/components/ProductList';
-import ProductPerformance from '@/app/dashboard/components/dashboard-item/ProductPerformance';
+import NavAppBar from './components/ElevateAppBar';
+import ProductList from './components/ProductList';
 
 const Root = () => {
   return (
-    <Container>
-    {/* <PageContainer title="Dashboard" description="this is Dashboard"> */}
-      <Typography variant="h1" sx={{ pt: 3, pb: 3 }}>App Name</Typography>
-      <Box sx={{ height: "90dvh" }}>
+    <Box>
+      <NavAppBar />
+      <Container sx={{ pt: 3 }}>
         <ProductList />
-      </Box>
-    {/* </PageContainer> */}
-    </Container>
+      </Container>
+    </Box>
   )
 }
 
